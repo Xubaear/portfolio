@@ -1,7 +1,7 @@
 import React from 'react'
 
 export default function Footer() {
-  const phone = '01977984999'
+  const phone = '01966984999'
   const email = 'zubaear.hasan7@gmail.com'
 
   return (
@@ -12,7 +12,7 @@ export default function Footer() {
           <a href={`tel:${phone}`} className="px-4 py-2 bg-slate-800 text-white rounded-md">Call: {phone}</a>
           <a href={`mailto:${email}`} className="px-4 py-2 bg-primary text-white rounded-md">Email: {email}</a>
         </div>
-        <div className="mt-6 text-sm">© {new Date().getFullYear()} Your Name</div>
+        <div className="mt-6 text-sm">© {new Date().getFullYear()} Md Zubaear Hasan</div>
       </div>
     </footer>
   )
