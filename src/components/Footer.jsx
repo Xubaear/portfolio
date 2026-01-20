@@ -1,8 +1,9 @@
 import React from 'react'
 
 export default function Footer() {
-  const phone = '01966984999'
+  const phone = '01977984999'
   const email = 'zubaear.hasan7@gmail.com'
+  const whatsapp = '01977984999'
 
   return (
     <footer id="contact" className="py-8 text-center text-slate-400">
@@ -11,6 +12,13 @@ export default function Footer() {
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <a href={`tel:${phone}`} className="px-4 py-2 bg-slate-800 text-white rounded-md">Call: {phone}</a>
           <a href={`mailto:${email}`} className="px-4 py-2 bg-primary text-white rounded-md">Email: {email}</a>
+          <a href={`https://wa.me/${whatsapp}`} target="_blank" rel="noreferrer" className="px-4 py-2 bg-green-600 text-white rounded-md">WhatsApp</a>
+        </div>
+
+        <div className="mt-4 flex items-center justify-center gap-4 text-slate-400">
+          <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a href="https://twitter.com/" target="_blank" rel="noreferrer">Twitter</a>
         </div>
         <div className="mt-6 text-sm">© {new Date().getFullYear()} Md Zubaear Hasan</div>
       </div>

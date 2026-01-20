@@ -71,7 +71,34 @@ export default function Contact() {
         </div>
       </form>
 
-      <div className="mt-6 text-sm text-slate-400">Phone: 01977984999 · Email: zubaear.hasan7@gmail.com</div>
+      <div className="mt-8 pt-8 border-t border-slate-800">
+        <h4 className="text-lg font-semibold mb-4">Contact Information</h4>
+        <div className="grid sm:grid-cols-2 gap-4 text-slate-300">
+          <div className="flex items-center gap-3">
+            <span className="text-slate-400">📧 Email:</span>
+            <a href="mailto:zubaear.hasan7@gmail.com" className="hover:text-white transition">
+              zubaear.hasan7@gmail.com
+            </a>
+          </div>
+          <div className="flex items-center gap-3">
+            <span className="text-slate-400">📱 Phone:</span>
+            <a href="tel:01977984999" className="hover:text-white transition">
+              01977984999
+            </a>
+          </div>
+          <div className="flex items-center gap-3 sm:col-span-2">
+            <span className="text-slate-400">💬 WhatsApp:</span>
+            <a 
+              href="https://wa.me/8801977984999" 
+              target="_blank" 
+              rel="noreferrer" 
+              className="px-4 py-2 bg-green-600 hover:bg-green-700 text-white rounded-md transition inline-block"
+            >
+              Chat on WhatsApp (01977984999)
+            </a>
+          </div>
+        </div>
+      </div>
     </section>
   )
 }

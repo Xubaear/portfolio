@@ -17,10 +17,12 @@ export default function Header() {
       {/* Desktop nav */}
       <nav className="hidden md:block">
         <ul className="flex gap-6 text-sm text-slate-300">
-          <li><a href="#projects" className="hover:text-white">Projects</a></li>
-          <li><a href="#about" className="hover:text-white">About</a></li>
-          <li><a href="#skills" className="hover:text-white">Skills</a></li>
-          <li><a href="#contact" className="hover:text-white">Contact</a></li>
+          <li><a href="#about" className="hover:text-white transition">About</a></li>
+          <li><a href="#skills" className="hover:text-white transition">Skills</a></li>
+          <li><a href="#education" className="hover:text-white transition">Education</a></li>
+          
+          <li><a href="#projects" className="hover:text-white transition">Projects</a></li>
+          <li><a href="#contact" className="hover:text-white transition">Contact</a></li>
         </ul>
       </nav>
 
@@ -46,10 +48,12 @@ export default function Header() {
       <div className={`absolute left-4 right-4 top-20 z-40 md:hidden transition-all ${open ? 'opacity-100 scale-100' : 'opacity-0 pointer-events-none scale-95'}`}>
         <div className="mx-auto max-w-lg bg-gradient-to-br from-slate-900/80 to-slate-900/60 border border-slate-800 rounded-xl p-4 glass">
           <ul className="flex flex-col gap-3 text-slate-200">
-            <li><a href="#projects" onClick={() => setOpen(false)} className="block px-3 py-2 rounded hover:bg-slate-800/40">Projects</a></li>
-            <li><a href="#about" onClick={() => setOpen(false)} className="block px-3 py-2 rounded hover:bg-slate-800/40">About</a></li>
-            <li><a href="#skills" onClick={() => setOpen(false)} className="block px-3 py-2 rounded hover:bg-slate-800/40">Skills</a></li>
-            <li><a href="#contact" onClick={() => setOpen(false)} className="block px-3 py-2 rounded hover:bg-slate-800/40">Contact</a></li>
+            <li><a href="#about" onClick={() => setOpen(false)} className="block px-3 py-2 rounded hover:bg-slate-800/40 transition">About</a></li>
+            <li><a href="#skills" onClick={() => setOpen(false)} className="block px-3 py-2 rounded hover:bg-slate-800/40 transition">Skills</a></li>
+            <li><a href="#education" onClick={() => setOpen(false)} className="block px-3 py-2 rounded hover:bg-slate-800/40 transition">Education</a></li>
+            <li><a href="#experience" onClick={() => setOpen(false)} className="block px-3 py-2 rounded hover:bg-slate-800/40 transition">Experience</a></li>
+            <li><a href="#projects" onClick={() => setOpen(false)} className="block px-3 py-2 rounded hover:bg-slate-800/40 transition">Projects</a></li>
+            <li><a href="#contact" onClick={() => setOpen(false)} className="block px-3 py-2 rounded hover:bg-slate-800/40 transition">Contact</a></li>
           </ul>
         </div>
       </div>
