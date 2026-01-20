@@ -9,11 +9,11 @@ export default function Education() {
           <div className="flex justify-between items-center">
             <div>
               <div className="font-semibold">B.Sc. in EEE</div>
-              <div className="text-sm text-slate-400">Rajshahi Science and Technology University — 2020</div>
+              <div className="text-sm text-slate-400">Rajshahi Science and Technology University — 2025</div>
             </div>
             <div className="text-sm text-slate-400">CGPA: 3.70</div>
           </div>
-          <div className="mt-2 text-sm">Relevant coursework: Data Structures, Web Development, Databases, Algorithms.</div>
+          {/*<div className="mt-2 text-sm">Relevant coursework: Data Structures, Web Development, Databases, Algorithms.</div>*/}
         </div>
 
         
