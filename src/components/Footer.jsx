@@ -16,9 +16,9 @@ export default function Footer() {
         </div>
 
         <div className="mt-4 flex items-center justify-center gap-4 text-slate-400">
-          <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
-          <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
-          <a href="https://twitter.com/" target="_blank" rel="noreferrer">Twitter</a>
+          <a href="https://github.com/Xubaear" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/in/zubaear/" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a href="https://www.facebook.com/zubaear.hasan" target="_blank" rel="noreferrer">Facebook</a>
         </div>
         <div className="mt-6 text-sm">© {new Date().getFullYear()} Md Zubaear Hasan</div>
       </div>
