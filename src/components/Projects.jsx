@@ -145,7 +145,7 @@ export default function Projects() {
                 onClick={() => setSelected(p)} 
                 className="px-3 py-2 bg-primary text-white rounded-md hover:opacity-90 transition"
               >
-                View More / Details
+                View More Details
               </button>
               <a 
                 href={p.live} 
