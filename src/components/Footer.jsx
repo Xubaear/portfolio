@@ -1,26 +1,35 @@
 import React from 'react'
 
 export default function Footer() {
-  const phone = '01977984999'
-  const email = 'zubaear.hasan7@gmail.com'
-  const whatsapp = '01977984999'
+  const year = new Date().getFullYear()
 
   return (
-    <footer id="contact" className="py-8 text-center text-slate-400">
-      <div className="max-w-2xl mx-auto">
-        <div className="mb-4">Interested in working together?</div>
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <a href={`tel:${phone}`} className="px-4 py-2 bg-slate-800 text-white rounded-md">Call: {phone}</a>
-          <a href={`mailto:${email}`} className="px-4 py-2 bg-primary text-white rounded-md">Email: {email}</a>
-          <a href={`https://wa.me/${whatsapp}`} target="_blank" rel="noreferrer" className="px-4 py-2 bg-green-600 text-white rounded-md">WhatsApp</a>
+    <footer className="py-8 mt-6 border-t border-white/5">
+      <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-slate-500">
+        <div className="flex items-center gap-2">
+          <span className="w-1.5 h-1.5 rounded-full bg-green-400 animate-pulse" />
+          <span>Open to new projects</span>
         </div>
 
-        <div className="mt-4 flex items-center justify-center gap-4 text-slate-400">
-          <a href="https://github.com/Xubaear" target="_blank" rel="noreferrer">GitHub</a>
-          <a href="https://www.linkedin.com/in/zubaear/" target="_blank" rel="noreferrer">LinkedIn</a>
-          <a href="https://www.facebook.com/zubaear.hasan" target="_blank" rel="noreferrer">Facebook</a>
+        <div className="flex items-center gap-5">
+          {[
+            { label: 'GitHub',   href: 'https://github.com/Xubaear' },
+            { label: 'LinkedIn', href: 'https://www.linkedin.com/in/zubaear/' },
+            { label: 'Facebook', href: 'https://www.facebook.com/zubaear.hasan' },
+          ].map((l) => (
+            <a
+              key={l.label}
+              href={l.href}
+              target="_blank"
+              rel="noreferrer"
+              className="hover:text-slate-200 transition-colors duration-200 text-xs"
+            >
+              {l.label}
+            </a>
+          ))}
         </div>
-        <div className="mt-6 text-sm">© {new Date().getFullYear()} Md Zubaear Hasan</div>
+
+        <div className="text-xs">© {year} Md Zubaear Hasan</div>
       </div>
     </footer>
   )
