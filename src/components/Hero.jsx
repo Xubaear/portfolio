@@ -60,6 +60,7 @@ export default function Hero() {
           initial={{ opacity: 0, x: -30 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.7, ease: 'easeOut' }}
+          className="order-2 md:order-1 flex flex-col items-center md:items-start text-center md:text-left"
         >
           {/* Badge */}
           <motion.div
@@ -128,7 +129,7 @@ export default function Hero() {
           initial={{ opacity: 0, scale: 0.88 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, ease: 'easeOut', delay: 0.15 }}
-          className="flex justify-center md:justify-end"
+          className="flex justify-center md:justify-end order-1 md:order-2 mb-8 md:mb-0"
         >
           <div className="relative">
             {/* Glow orb behind image */}
