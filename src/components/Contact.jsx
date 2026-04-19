@@ -26,8 +26,8 @@ const CONTACT_INFO = [
       </svg>
     ),
     label: 'Phone',
-    value: '+880 197 798 4999',
-    href: 'tel:01966984999',
+    value: '+880 196-6984999',
+
     color: 'from-cyan-500/20 to-teal-500/10',
     border: 'border-cyan-500/15',
     iconColor: 'text-cyan-400',
