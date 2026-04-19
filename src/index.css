@@ -27,6 +27,12 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
+  cursor: none; /* hide default — CursorTrail takes over */
+}
+
+/* Keep pointer visible on interactive elements */
+a, button, [role="button"], input, textarea, select, label {
+  cursor: none;
 }
 
 /* ─── Rich animated background ───────────────────── */

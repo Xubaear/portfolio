@@ -6,21 +6,25 @@ import Skills from './components/Skills'
 import Projects from './components/Projects'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+import CursorTrail from './components/CursorTrail'
 
 function App() {
   return (
-    <div className="min-h-screen flex flex-col">
-      <Header />
-      <main className="flex-1">
-        <Hero />
-        <About />
-        <Skills />
-        <Education />
-        <Projects />
-        <Contact />
-      </main>
-      <Footer />
-    </div>
+    <>
+      <CursorTrail />
+      <div className="min-h-screen flex flex-col">
+        <Header />
+        <main className="flex-1">
+          <Hero />
+          <About />
+          <Skills />
+          <Education />
+          <Projects />
+          <Contact />
+        </main>
+        <Footer />
+      </div>
+    </>
   )
 }
 
